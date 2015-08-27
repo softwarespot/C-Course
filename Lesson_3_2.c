@@ -5,9 +5,9 @@ int main(void) {
     printf("Enter an amount in USD: ");
     scanf("%f", &dollars);
 
-    float conversionFactor = 5.94573;
+    float conversionFactor = 0.889;
     float euro = dollars / conversionFactor;
-    printf("USD converted to euro: %.2f\n", euro);
+    printf("USD converted to EURO: %.2f\n", euro);
 
     return 0;
 }
