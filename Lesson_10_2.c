@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(void) {
-    printf("The program calculates the number of wovels.\n");
+    printf("The program calculates the number of vowels.\n");
     printf("Enter a word:");
 
     char word[16];
@@ -14,7 +14,7 @@ int main(void) {
         }
     }
 
-    printf("The word contains %d wovels.\n", vowelCount);
+    printf("The word contains %d vowels.\n", vowelCount);
 
     return 0;
 }
