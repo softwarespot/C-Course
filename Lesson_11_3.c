@@ -50,15 +50,16 @@ int main(void) {
         fprintf(fileOpen, "%d\n", (person_count - 1));
 
         for (int i = 0; i < person_count; i++) {
-            if (i == is_found)
+            if (i == is_found) {
                 continue;
+            }
+
             fprintf(fileOpen, "%s %s %s\n", persons[i].firstName, persons[i].lastName, persons[i].phoneNumber);
         }
         fclose(fileOpen);
 
         printf("Data removed from the directory.\n");
-    }
-    else {
+    } else {
         printf("%s %s was not found.\n", firstName, lastName);
     }
 

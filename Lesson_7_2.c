@@ -12,17 +12,13 @@ int main(void) {
         scanf("%d", &choice);
         if (choice < 0) {
             printf("Terminating the program...");
-        }
-        else if (choice == 1) {
+        } else if (choice == 1) {
             calculation();
-        }
-        else if (choice == 2) {
+        } else if (choice == 2) {
             difference();
-        }
-        else if (choice == 3) {
+        } else if (choice == 3) {
             product();
-        }
-        else {
+        } else {
             printf("You entered an invalid number.\n\n");
         }
 

@@ -8,8 +8,7 @@ int main(void) {
     /* A better approach is to use ternary: printf("The number is %s\n", (firstNumber % 2 == 0 ? "even" : "odd")); */
     if (firstNumber % 2 == 0) {
         printf("The number is even\n");
-    }
-    else {
+    } else {
         printf("The number is odd\n");
     }
 

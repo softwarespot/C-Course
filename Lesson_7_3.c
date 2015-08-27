@@ -21,13 +21,12 @@ int largest(int number1, int number2, int number3) {
     int largest;
     if (number1 > number2 && number1 > number3) {
         largest = number1;
-    }
-    else if (number2 > number1 && number2 > number3) {
+    } else if (number2 > number1 && number2 > number3) {
         largest = number2;
-    }
-    else {
+    } else {
         largest = number3;
     }
+
     return largest;
 }
 
@@ -35,12 +34,11 @@ int smallest(int number1, int number2, int number3) {
     int smallest;
     if (number1 < number2 && number1 < number3) {
         smallest = number1;
-    }
-    else if (number2 < number1 && number2 < number3) {
+    } else if (number2 < number1 && number2 < number3) {
         smallest = number2;
-    }
-    else {
+    } else {
         smallest = number3;
     }
+
     return smallest;
 }

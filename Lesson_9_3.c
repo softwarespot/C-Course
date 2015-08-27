@@ -24,8 +24,7 @@ int main()
             numbers[index] += number;
             fscanf(hMataB, "%d\n", &number);
             numbers[index] += number;
-        }
-        else {
+        } else {
             fscanf(hMataA, "%d ", &number);
             numbers[index] += number;
             fscanf(hMataB, "%d ", &number);
@@ -46,8 +45,7 @@ int main()
     for (int i = 1; i <= 100; i++) {
         if ((i % 10) == 0) {
             fprintf(filewrite, "%d\n", numbers[index]);
-        }
-        else {
+        } else {
             fprintf(filewrite, "%d ", numbers[index]);
         }
         index++;

@@ -9,6 +9,7 @@ int main() {
   printf("In the main program: x = %d\n", x);
   changeNumber(&x);
   printf("In the main program: x = %d\n", x);
+
   return 0;
 }
 

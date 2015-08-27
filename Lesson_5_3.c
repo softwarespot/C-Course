@@ -13,18 +13,18 @@ int main(void) {
     printf("Enter the second number: ");
     scanf("%d", &secondNumber);
     switch (choice) {
-    case 1:
-        printf("%d-%d=%d\n", firstNumber, secondNumber, firstNumber - secondNumber);
-        break;
-    case 2:
-        printf("%d+%d=%d\n", firstNumber, secondNumber, firstNumber + secondNumber);
-        break;
-    case 3:
-        printf("%d*%d=%d\n", firstNumber, secondNumber, firstNumber * secondNumber);
-        break;
-    default:
-        printf("No selection was made.");
-        break;
+        case 1:
+            printf("%d-%d=%d\n", firstNumber, secondNumber, firstNumber - secondNumber);
+            break;
+        case 2:
+            printf("%d+%d=%d\n", firstNumber, secondNumber, firstNumber + secondNumber);
+            break;
+        case 3:
+            printf("%d*%d=%d\n", firstNumber, secondNumber, firstNumber * secondNumber);
+            break;
+        default:
+            printf("No selection was made.");
+            break;
     }
 
     return 0;

@@ -27,8 +27,7 @@ int main(void) {
             person_index++;
         }
         fclose(fileopen);
-    }
-    else { /* Error, so default the count to zero */
+    } else { /* Error, so default the count to zero */
         person_count = 0;
     }
 
