@@ -8,17 +8,17 @@ int main(void) {
         return 0;
     }
 
-    /* Create a person structure */
+    // Create a person structure
     struct person {
         char first_name[20];
         char last_name[20];
         char phone_number[20];
     };
-    /* Array of person structures */
+    // Array of person structures
     struct person persons[50];
 
     int person_count = 0;
-    /* Read the file and add the data to the persons array */
+    // Read the file and add the data to the persons array
     fscanf(fileOpen, "%d", &person_count);
     if (person_count > 0) {
         for (int i = 0; i < person_count; i++) {

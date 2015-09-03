@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/* This is a fine program */
+// This is a fine program
 
 int main(void) {
     int number;

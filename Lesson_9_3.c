@@ -2,7 +2,7 @@
 
 int main()
 {
-    /* Read the sum of the files */
+    // Read the sum of the files
     FILE *hMataA = fopen("mata.txt", "r");
     if (hMataA == NULL) {
         printf("Error opening file.");

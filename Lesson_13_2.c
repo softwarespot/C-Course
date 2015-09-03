@@ -9,7 +9,7 @@ int main(int argc, char *argv[]) {
   int array[5];
 
   if(argc == 6) {
-  /* Program name and command line parameters */
+  // Program name and command line parameters
     for(int x = 0; x < argc - 1; x++) {
       array[x] = atoi(argv[x + 1]);
     }

@@ -9,18 +9,18 @@ int main(void) {
         return 0;
     }
 
-    /* Create a person structure */
+    // Create a person structure
     struct person {
         char first_name[20];
         char last_name[20];
         char phone_number[20];
     };
-    /* Array of person structures */
+    // Array of person structures
     struct person persons[50];
 
     int person_count = 0, person_index = 0;
 
-    /* Read the file and add the data to the persons array */
+    // Read the file and add the data to the persons array
     fscanf(fileOpen, "%d", &person_count);
     if (person_count > 0) {
         for (int i = 0; i < person_count; i++) {
@@ -28,11 +28,11 @@ int main(void) {
             person_index++;
         }
         fclose(fileOpen);
-    } else { /* Error, so default the count to zero */
+    } else { // Error, so default the count to zero
         person_count = 0;
     }
 
-    /* Add a new person to the persons array */
+    // Add a new person to the persons array
     printf("Enter first name:");
     scanf("%s", &persons[person_index].first_name);
     printf("Enter last name:");
@@ -40,7 +40,7 @@ int main(void) {
     printf("Enter telephone number:");
     scanf("%s", &persons[person_index].phone_number);
 
-    /* Increase the count and array index count */
+    // Increase the count and array index count
     person_count++;
     person_index++;
 

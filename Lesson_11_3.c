@@ -9,14 +9,14 @@ int main(void) {
         return 0;
     }
 
-    /* Create a person structure */
+    // Create a person structure
     struct person {
         char firstName[20];
         char lastName[20];
         char phoneNumber[20];
     };
 
-    /* Array of person structures */
+    // Array of person structures
     struct person persons[50];
 
     char firstName[20];
@@ -28,7 +28,7 @@ int main(void) {
     scanf("%s", &lastName[0]);
 
     int is_found = -1, person_count = 0;
-    /* Read the file and add the data to the persons array */
+    // Read the file and add the data to the persons array
     fscanf(fileOpen, "%d", &person_count);
     if (person_count > 0) {
         for (int i = 0; i < person_count; i++) {
@@ -39,7 +39,7 @@ int main(void) {
             }
         }
     }
-    fclose(fileOpen); /* Close the open handle */
+    fclose(fileOpen); // Close the open handle
 
     if (is_found >= 0) {
         fileOpen = fopen(PHONE_DIR, "w");
