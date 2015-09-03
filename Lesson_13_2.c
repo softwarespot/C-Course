@@ -4,11 +4,14 @@
 void calculateAndPrint(int *, int);
 
 int main(int argc, char *argv[]) {
-  int sum = 0, size = 5, array[5];
+  int sum = 0;
+  int size = 5;
+  int array[5];
+
   if(argc == 6) {
   /* Program name and command line parameters */
     for(int x = 0; x < argc - 1; x++) {
-      array[x] = atoi(argv[x+1]);
+      array[x] = atoi(argv[x + 1]);
     }
     calculateAndPrint(array, size);
   } else {

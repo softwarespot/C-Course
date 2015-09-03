@@ -1,9 +1,10 @@
 #define PHONE_DIR "phonedir.txt"
+
 #include <stdio.h>
 
 int main(void) {
-    FILE *fileopen = fopen(PHONE_DIR, "r");
-    if (fileopen == NULL) {
+    FILE *fileOpen = fopen(PHONE_DIR, "r");
+    if (fileOpen == NULL) {
         printf("Error opening file.");
         return 0;
     }
@@ -20,13 +21,13 @@ int main(void) {
     int person_count = 0, person_index = 0;
 
     /* Read the file and add the data to the persons array */
-    fscanf(fileopen, "%d", &person_count);
+    fscanf(fileOpen, "%d", &person_count);
     if (person_count > 0) {
         for (int i = 0; i < person_count; i++) {
-            fscanf(fileopen, "%s %s %s\n", &persons[i].first_name[0], &persons[i].last_name[0], &persons[i].phone_number[0]);
+            fscanf(fileOpen, "%s %s %s\n", &persons[i].first_name[0], &persons[i].last_name[0], &persons[i].phone_number[0]);
             person_index++;
         }
-        fclose(fileopen);
+        fclose(fileOpen);
     } else { /* Error, so default the count to zero */
         person_count = 0;
     }
@@ -43,17 +44,17 @@ int main(void) {
     person_count++;
     person_index++;
 
-    fileopen = fopen(PHONE_DIR, "w");
-    if (fileopen == NULL) {
+    fileOpen = fopen(PHONE_DIR, "w");
+    if (fileOpen == NULL) {
         printf("Error opening file.");
         return 0;
     }
 
-    fprintf(fileopen, "%d\n", person_count);
+    fprintf(fileOpen, "%d\n", person_count);
     for (int i = 0; i < person_count; i++) {
-        fprintf(fileopen, "%s %s %s\n", persons[i].first_name, persons[i].last_name, persons[i].phone_number);
+        fprintf(fileOpen, "%s %s %s\n", persons[i].first_name, persons[i].last_name, persons[i].phone_number);
     }
-    fclose(fileopen);
+    fclose(fileOpen);
     printf("Successfully saved the data.\n");
 
     return 0;

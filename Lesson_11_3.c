@@ -19,7 +19,8 @@ int main(void) {
     /* Array of person structures */
     struct person persons[50];
 
-    char firstName[20], lastName[20];
+    char firstName[20];
+    char lastName[20];
     printf("Enter first name:");
     scanf("%s", &firstName[0]);
 
