@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 
 int *addressOfASmallestValue(int *numbers, int size);
 
