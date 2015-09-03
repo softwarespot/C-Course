@@ -3,8 +3,9 @@
 int main(void) {
     printf("Are you male or female (m/f)? ");
     char gender = getchar();
+
     printf("Enter your age: ");
-    int age;
+    int age = 0;
     scanf("%d", &age);
 
     if (age >= 0 && age <= 55) {

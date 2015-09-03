@@ -6,7 +6,7 @@ int main(void) {
     printf("The program calculates the total hours worked during\na specific period and the average length of a day.\n\n");
     printf("How many days:");
 
-    int day;
+    int day = 0;
     scanf("%d", &day);
 
     float sum = 0;

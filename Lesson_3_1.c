@@ -3,11 +3,11 @@
 int main(void) {
     printf("Enter an integer: ");
 
-    int number1;
+    int number1 = 0;
     scanf("%d", &number1);
     printf("Enter a decimal number: ");
 
-    float number2;
+    float number2 = 0;
     scanf("%f", &number2);
     printf("You entered the integer: %d\n", number1);
     printf("You entered the decimal number, rounded to two decimal places: %.2f\n", number2);

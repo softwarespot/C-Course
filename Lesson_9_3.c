@@ -3,14 +3,14 @@
 int main()
 {
     // Read the sum of the files
-    FILE *hMataA = fopen("mata.txt", "r");
-    if (hMataA == NULL) {
+    FILE *mataA = fopen("mata.txt", "r");
+    if (mataA == NULL) {
         printf("Error opening file.");
         return;
     }
 
-    FILE *hMataB = fopen("matb.txt", "r");
-    if (hMataB == NULL) {
+    FILE *mataB = fopen("matb.txt", "r");
+    if (mataB == NULL) {
         printf("Error opening file.");
         return;
     }
@@ -20,20 +20,20 @@ int main()
     for (int i = 1; i <= 100; i++) {
         numbers[index] = 0;
         if ((i % 10) == 0) {
-            fscanf(hMataA, "%d\n", &number);
+            fscanf(mataA, "%d\n", &number);
             numbers[index] += number;
-            fscanf(hMataB, "%d\n", &number);
+            fscanf(mataB, "%d\n", &number);
             numbers[index] += number;
         } else {
-            fscanf(hMataA, "%d ", &number);
+            fscanf(mataA, "%d ", &number);
             numbers[index] += number;
-            fscanf(hMataB, "%d ", &number);
+            fscanf(mataB, "%d ", &number);
             numbers[index] += number;
         }
         index++;
     }
-    fclose(hMataA);
-    fclose(hMataB);
+    fclose(mataA);
+    fclose(mataB);
 
     FILE *filewrite = fopen("sum.usr", "w");
     if (filewrite == NULL) {

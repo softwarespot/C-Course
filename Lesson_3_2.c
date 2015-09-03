@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(void) {
-    float dollars;
+    float dollars = 0;
     printf("Enter an amount in USD: ");
     scanf("%f", &dollars);
 

@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(void) {
-    int number;
+    int number = 0;
     printf("Enter an integer: ");
     scanf("%d", &number);
     number = number * number;

@@ -3,15 +3,17 @@
 int main(void) {
     printf("1: subtraction\n2: addition\n3: multiplication\nSelect function: ");
 
-    int choice;
+    int choice = 0;
     scanf("%d", &choice);
-    int firstNumber, secondNumber;
 
+    int firstNumber = 0;
     printf("Enter the first number: ");
     scanf("%d", &firstNumber);
 
+    int secondNumber = 0;
     printf("Enter the second number: ");
     scanf("%d", &secondNumber);
+
     switch (choice) {
         case 1:
             printf("%d-%d=%d\n", firstNumber, secondNumber, firstNumber - secondNumber);

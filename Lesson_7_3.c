@@ -4,7 +4,9 @@ int largest(int number1, int number2, int number3);
 int smallest(int number1, int number2, int number3);
 
 int main(void) {
-    int num1, num2, num3;
+    int num1 = 0;
+    int num2 = 0;
+    int num3 = 0;
     printf("Enter the 1. number:");
     scanf("%d", &num1);
     printf("Enter the 2. number:");
@@ -18,7 +20,7 @@ int main(void) {
 }
 
 int largest(int number1, int number2, int number3) {
-    int largest;
+    int largest = 0;
     if (number1 > number2 && number1 > number3) {
         largest = number1;
     } else if (number2 > number1 && number2 > number3) {
@@ -31,7 +33,7 @@ int largest(int number1, int number2, int number3) {
 }
 
 int smallest(int number1, int number2, int number3) {
-    int smallest;
+    int smallest = 0;
     if (number1 < number2 && number1 < number3) {
         smallest = number1;
     } else if (number2 < number1 && number2 < number3) {
