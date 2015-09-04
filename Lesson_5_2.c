@@ -9,18 +9,19 @@ int main(void)
     int age = 0;
     scanf("%d", &age);
 
+	gender = toupper(gender);
     if (age >= 0 && age <= 55) {
-        if (gender == 'm' || gender == 'M') {
+        if (gender == 'M') {
             printf("You are a man in your best years!\n");
-        } else if (gender == 'f' || gender == 'F') {
+        } else if (gender == 'F') {
             printf("You are a beauty!\n");
         } else {
             printf("An error occurred in the program!\n");
         }
     } else if (age >= 56 && age <= 100) {
-        if (gender == 'm' || gender == 'M') {
+        if (gender == 'M') {
             printf("You are a wise man!\n");
-        } else if (gender == 'f' || gender == 'F') {
+        } else if (gender == 'F') {
             printf("You look young for your age!\n");
         }
     } else {

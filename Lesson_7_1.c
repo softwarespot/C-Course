@@ -37,7 +37,7 @@ void cat(void)
 
 void dog(void)
 {
-    printf("The dog says wuff-wuff!\n");
+    printf("The dog says woof-woof!\n");
 }
 
 void cow(void)
