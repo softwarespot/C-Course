@@ -9,7 +9,7 @@ int main(void)
     int age = 0;
     scanf("%d", &age);
 
-	gender = toupper(gender);
+    gender = toupper(gender);
     if (age >= 0 && age <= 55) {
         if (gender == 'M') {
             printf("You are a man in your best years!\n");
