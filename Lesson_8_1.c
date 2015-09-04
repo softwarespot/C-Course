@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main(void) {
+int main(void)
+{
     float days[30];
 
     printf("The program calculates the total hours worked during\na specific period and the average length of a day.\n\n");

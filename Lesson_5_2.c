@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main(void) {
+int main(void)
+{
     printf("Are you male or female (m/f)? ");
     char gender = getchar();
 

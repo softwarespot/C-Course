@@ -1,9 +1,10 @@
 #include <stdio.h>
 
-int main(void) {
+int main(void)
+{
     printf("The program calculates the average of scores you enter.\nEnd with a negative integer.\n");
 
-    int count = 0
+    int count = 0;
     int sum = 0;
     int choice = 0;
     do {

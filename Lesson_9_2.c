@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main(void) {
+int main(void)
+{
     int sum = 0;
 
     FILE *fileOpen = fopen("numbers.s", "r");

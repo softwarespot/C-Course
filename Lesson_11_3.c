@@ -2,7 +2,8 @@
 
 #include <stdio.h>
 
-int main(void) {
+int main(void)
+{
     FILE *fileOpen = fopen(PHONE_DIR, "r");
     if (fileOpen == NULL) {
         printf("Error opening file.\n");

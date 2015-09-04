@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main(void) {
+int main(void)
+{
     printf("The program calculates the number of vowels.\n");
     printf("Enter a word:");
 

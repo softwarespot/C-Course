@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main(void) {
+int main(void)
+{
     printf("The program saves your first and last name into a file.\n");
 
     printf("Enter your first name:");

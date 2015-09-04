@@ -3,7 +3,8 @@
 int largest(int number1, int number2, int number3);
 int smallest(int number1, int number2, int number3);
 
-int main(void) {
+int main(void)
+{
     int num1 = 0;
     int num2 = 0;
     int num3 = 0;
@@ -19,7 +20,8 @@ int main(void) {
     return 0;
 }
 
-int largest(int number1, int number2, int number3) {
+int largest(int number1, int number2, int number3)
+{
     int largest = 0;
     if (number1 > number2 && number1 > number3) {
         largest = number1;
@@ -32,7 +34,8 @@ int largest(int number1, int number2, int number3) {
     return largest;
 }
 
-int smallest(int number1, int number2, int number3) {
+int smallest(int number1, int number2, int number3)
+{
     int smallest = 0;
     if (number1 < number2 && number1 < number3) {
         smallest = number1;

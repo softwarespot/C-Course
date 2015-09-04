@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main(void) {
+int main(void)
+{
     FILE *fileOpen = fopen("hello.usr", "w");
     if (fileOpen != NULL) {
         fprintf(fileOpen, "Hello world!\n");

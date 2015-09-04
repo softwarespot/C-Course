@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main(void) {
+int main(void)
+{
     int matrix[5][5] = {
         4, 6, 25, 88, 5,
         34, 5, 300, 4, 65,

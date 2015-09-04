@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main(void) {
+int main(void)
+{
     printf("1: subtraction\n2: addition\n3: multiplication\nSelect function: ");
 
     int choice = 0;
